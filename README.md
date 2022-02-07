@@ -1,6 +1,6 @@
 <h3>Table with Pagination react</h3>
 
- <p>It's working still neesd more styling</p>
+ <p>It's working but still needs more styling</p>
  
 
 
