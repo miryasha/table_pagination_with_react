@@ -3,6 +3,7 @@ import Pagination from './Pagination';
 import data from "./mock-data.json"
 
 
+
 let PageSize = 20;
 
 export default function Table() {
@@ -30,7 +31,7 @@ export default function Table() {
         <tbody>
           {currentTableData.map(item => {
             return (
-              <tr>
+              <tr key={item.id}>
                 <td>{item.id}</td>
                 <td>{item.first_name}</td>
                 <td>{item.last_name}</td>

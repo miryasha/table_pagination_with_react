@@ -47,11 +47,12 @@ const Pagination = props => {
       </li>
       {paginationRange.map(pageNumber => {
         if (pageNumber === DOTS) {
-          return <li className="pagination-item dots">&#8230;</li>;
+          return <li key={pageNumber}  className="pagination-item dots">&#8230;</li>;
         }
 
         return (
           <li
+            key={pageNumber}
             className={pageNumber}
             //className={{ backgroundColor : "red" }}
             //style={pageNumber  ? { backgroundColor : "red" }: { backgroundColor : "yellow" }}
